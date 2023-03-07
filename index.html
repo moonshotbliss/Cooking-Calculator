@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+    <title>Cooking Calculator</title>
+</head>
+<body>
+    <div class="main-grid">
+        <div class="header">
+            <h1>Cooking Calculator</h1>
+            <i class="bi bi-plus-square-fill btn-add" onclick="addItem()"></i>
+        </div>
+        <div class="ingredients">
+            <h2>Name</h2>
+            <h2>Quantity</h2>
+            <h2>Price</h2>
+            <h2 class="spacet">Total</h2>
+            
+        </div>
+        <div class="food-space">
+            <input type="text" class=" item name_space">
+            <input type="text" class="item quantity_space" value="0">
+            <input type="text" class="item price_space"value="0">s
+            <span class="item total_space">0.00</span>
+            <i class="bi bi-trash btn-del" onclick="removeItem(this)"></i>
+        </div>
+        <div class="food-space">
+            <input type="text" class="item name_space">
+            <input type="text" class="item quantity_space" value="0">
+            <input type="text" class="item price_space" value="0">
+            <span class="item total_space">0.00</span>
+            <i class="bi bi-trash btn-del" onclick="removeItem(this)"></i>
+        </div>
+       
+
+
+
+    </div>
+     <div class="grandtotal">
+            <h4>Grand Total</h4>
+            <span class="gtotal_space">0.00</span>
+    </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>

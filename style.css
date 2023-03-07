@@ -1,0 +1,120 @@
+:root{
+    --yellow: #FBB91F;
+    --white: #FFFFFF;
+    --black: #2F2F2F;
+    --red: #D0222;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+
+}
+.main-grid{
+    display: grid;
+    grid-gap: 20px;
+    max-width: 80%;
+    margin: 120px auto;
+    /* grid-template-columns: 2fr 2fr 2fr 2fr 1fr; */
+ 
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-items: center;
+
+}
+/* h2{
+    margin-left: 20px;
+} */
+.ingredients{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+    grid-template-columns: 2fr 1fr 1.75fr 2fr;
+    text-align: center;
+  
+
+
+
+}
+.food-space{
+    
+    display: grid;
+    grid-gap: 20px;
+    height: 70px;
+    /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+    grid-template-columns: 2.5fr .1fr 1.75fr 2fr auto;
+    
+
+}
+.spacet{
+    columns: span5;
+   
+}
+i{
+    font-size: 45px;
+    color: #FBB91F;
+}
+.bi-trash
+{
+    color: var(--red);
+}
+input[type=text]
+{
+    border-radius: 39px;
+    text-align: center;
+    font-size: 20px;
+  
+    
+}
+span{
+    font-weight: bold;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.grandtotal{
+    float: right;
+    display: grid;
+    margin: 0 10%;
+    grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 1000px){
+    .ingredients{
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+        grid-template-columns: 3fr 1fr 1.75fr 2fr;
+        text-align: center;
+       
+    
+    
+    
+    }
+    .food-space{
+    
+      
+        /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+        grid-template-columns: 1fr 150px 150px 100px auto;
+       
+    
+    }
+}
+@media only screen and (max-width: 900px){
+   
+  
+    .food-space{
+    
+        
+        /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+        grid-template-columns: 1fr 150px 150px 100px auto;
+       
+    
+    }
+}
